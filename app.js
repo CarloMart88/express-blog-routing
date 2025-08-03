@@ -15,6 +15,7 @@ app.get('/', (req , res) => {
 // Configuriamo gli asset statici sull’applicazione in modo che si possano visualizzare le immagini associate ad ogni post.
 app.use(express.static('public'));
 
+// uso il router sul prefisso /posts
 app.use('/posts' , postsRouter)
 
 
